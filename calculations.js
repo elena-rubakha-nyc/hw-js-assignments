@@ -1,15 +1,15 @@
 function increaseBalance(x, y) {
-  x = x + y;
+  x += y; // was  x = x + y
   return x;
 }
 
 function decreaseBalance(x, y) { //added missing y argument
-  x = x - y;
+  x -= y; // was x = x - y
   return x;
 }
 
 function divideBalanceByAccounts(x, y) {
-  x = x / y;
+  x /= y; // was x = x / y
   return x;
   // console.log("x"); 
   /* as a return statement terminates the execution of a function 
@@ -19,7 +19,7 @@ function divideBalanceByAccounts(x, y) {
 }
 
 function getRestAfterDivision(x, y) {
-  x = x % y;
+  x %= y; // was  x = x % y
   return x;
 }
 
